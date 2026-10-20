@@ -1,0 +1,6 @@
+{
+  "name": "Fidelity Media — Short-Form Content Distribution Agency",
+  "description": "High-craft landing page for Fidelity Media, turning long-form videos into high-retention short clips and personal branding for creators and companies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fidelity Media — Short-Form Content Distribution Agency</title>
+  <meta name="description" content="High-craft landing page for Fidelity Media, turning long-form videos into high-retention short clips and personal branding for creators and companies." />
+  <meta property="og:title" content="Fidelity Media — Short-Form Content Distribution Agency" />
+  <meta property="og:description" content="High-craft landing page for Fidelity Media, turning long-form videos into high-retention short clips and personal branding for creators and companies." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Direct Stylesheet Link -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- ===================================================================
+       1. FLOATING PILL NAVIGATION (Fixed while scrolling)
+       =================================================================== -->
+  <header class="nav-wrapper" role="banner">
+    <nav class="nav-pill" aria-label="Main Navigation">
+      <a href="#home" class="brand-link" aria-label="Fidelity Media Home">
+        <img src="images/logo.jpg" alt="Fidelity Media Logo" class="brand-logo-img" />
+        <span>Fidelity Media</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#case-study">Case Study</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <!-- Actions: Theme Toggle & Call To Action -->
+      <div class="nav-actions">
+        <!-- Dark / Light Mode Switch Button -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg id="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Primary Booking Button -->
+        <button class="btn btn-primary" data-action="book-call">
+          Book a Call
+        </button>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="mobile-nav-toggle" class="btn-icon nav-mobile-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-nav-menu" class="nav-mobile-menu" aria-label="Mobile menu">
+        <a href="#services">Services</a>
+        <a href="#results">Results</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#case-study">Case Study</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================================================================
+         2. HERO SECTION
+         =================================================================== -->
+    <section id="home" class="hero">
+      <div class="container">
+        <!-- Small Pill Badge -->
+        <div class="hero-pill-badge reveal-on-scroll">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Short-Form Content Distribution</span>
+        </div>
+
+        <!-- Very Large Two-Line Headline -->
+        <h1 class="hero-headline reveal-on-scroll">
+          We Turn Your Long-Form Content
+          <span class="accent-line">Into Real Audience Views.</span>
+        </h1>
+
+        <!-- One Plain Sentence About What We Do -->
+        <p class="hero-subtext reveal-on-scroll">
+          We take your long-form videos and podcasts, extract the highest-retention hooks, and distribute edited clips across Instagram, TikTok, YouTube Shorts, and X.
+        </p>
+
+        <!-- Two Buttons: Book a Call & See Results -->
+        <div class="hero-actions reveal-on-scroll">
+          <button class="btn btn-primary" data-action="book-call">
+            Book a Call
+          </button>
+          <a href="#results" class="btn btn-secondary">
+            See Results
+          </a>
+        </div>
+
+        <!-- Supported Platforms List -->
+        <div class="hero-platforms reveal-on-scroll">
+          <span>Active distribution across:</span>
+          <span class="platform-tag">Instagram Reels</span>
+          <span>·</span>
+          <span class="platform-tag">TikTok</span>
+          <span>·</span>
+          <span class="platform-tag">YouTube Shorts</span>
+          <span>·</span>
+          <span class="platform-tag">X [TODO: confirm platforms]</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         3. RESULTS STRIP (Horizontally Auto-Scrolling Marquee)
+         =================================================================== -->
+    <section id="results" class="results-strip-section" aria-label="Recent Clip Results">
+      <div class="container">
+        <div class="results-strip-header">
+          <div>
+            <span class="section-label">Verified Performance Data</span>
+            <h2 class="section-title" style="margin-top: 0.25rem; font-size: clamp(1.75rem, 3vw, 2.25rem);">Delivered Clips & Analytics</h2>
+          </div>
+          <span class="section-label">[Hover to pause · Click any card to inspect]</span>
+        </div>
+      </div>
+
+      <!-- Scrolling Marquee containing Videos + Proof Dashboards -->
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <!-- VIDEO 1: Luxury / Automotive Hook -->
+          <article class="marquee-card" data-showcase-item="video" data-src="videos/clip-1.mp4" data-title="Automotive Lifestyle Kinetic Hook" data-metric="175,202 views" data-type="video">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">
+                <svg class="badge-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                Video Clip
+              </span>
+              <video src="videos/clip-1.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">175,202 views</span>
+              <span class="marquee-card-label">Automotive Lifestyle Hook</span>
+              <span class="marquee-card-detail">High-retention kinetic subtitle pacing</span>
+            </div>
+          </article>
+
+          <!-- PHOTO 1: 175k Views Case Study Graph -->
+          <article class="marquee-card" data-showcase-item="image" data-src="images/case-1.jpg" data-title="Organic Growth Curve" data-metric="175,202 views" data-type="image">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">
+                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                Dashboard
+              </span>
+              <img src="images/case-1.jpg" alt="Video performance graph reaching 175,202 views" loading="lazy" />
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">175,202</span>
+              <span class="marquee-card-label">Average Video Views</span>
+              <span class="marquee-card-detail">Documented organic growth curve</span>
+            </div>
+          </article>
+
+          <!-- VIDEO 2: Podcast / Stream Split Conversation -->
+          <article class="marquee-card" data-showcase-item="video" data-src="videos/clip-2.mp4" data-title="Multi-Cam Podcast Clip" data-metric="320K+ views" data-type="video">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">
+                <svg class="badge-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                Video Clip
+              </span>
+              <video src="videos/clip-2.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">320K+ views</span>
+              <span class="marquee-card-label">Podcast Multi-Camera Hook</span>
+              <span class="marquee-card-detail">Face-tracked vertical multi-panel cut</span>
+            </div>
+          </article>
+
+          <!-- PHOTO 2: 10,863 total posts -->
+          <article class="marquee-card" data-showcase-item="image" data-src="images/proof-posts.jpg" data-title="10,863 Posts Analytics" data-metric="10,863+ posts" data-type="image">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">
+                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                Dashboard
+              </span>
+              <img src="images/proof-posts.jpg" alt="Dashboard showing 10,863 total posts with 1.84% engagement rate" loading="lazy" />
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">10,863+</span>
+              <span class="marquee-card-label">Total Posts Published</span>
+              <span class="marquee-card-detail">1.84% average engagement rate</span>
+            </div>
+          </article>
+
+          <!-- VIDEO 3: Dynamic Stream & Reaction Hook -->
+          <article class="marquee-card" data-showcase-item="video" data-src="videos/clip-3.mp4" data-title="Dynamic Stream Moment" data-metric="285K+ views" data-type="video">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">
+                <svg class="badge-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                Video Clip
+              </span>
+              <video src="videos/clip-3.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">285K+ views</span>
+              <span class="marquee-card-label">Stream Reaction Hook</span>
+              <span class="marquee-card-detail">High early watch-time hook structure</span>
+            </div>
+          </article>
+
+          <!-- PHOTO 3: 4B+ Total Views Dashboard -->
+          <article class="marquee-card" data-showcase-item="image" data-src="images/proof-views.jpg" data-title="Network Views Verification" data-metric="4B+ views" data-type="image">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">
+                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                Dashboard
+              </span>
+              <img src="images/proof-views.jpg" alt="Dashboard showing network scale view numbers" loading="lazy" />
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">4B+</span>
+              <span class="marquee-card-label">Views Across Network</span>
+              <span class="marquee-card-detail">Cumulative distribution across accounts</span>
+            </div>
+          </article>
+
+          <!-- VIDEO 4: Personal Brand Authority Speech -->
+          <article class="marquee-card" data-showcase-item="video" data-src="videos/clip-4.mp4" data-title="Personal Brand Motivation" data-metric="410K+ views" data-type="video">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">
+                <svg class="badge-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                Video Clip
+              </span>
+              <video src="videos/clip-4.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">410K+ views</span>
+              <span class="marquee-card-label">Founder Personal Brand</span>
+              <span class="marquee-card-detail">Authority narrative with kinetic typography</span>
+            </div>
+          </article>
+
+          <!-- PHOTO 4: 13.4M Cumulative Views Roster -->
+          <article class="marquee-card" data-showcase-item="image" data-src="images/proof-analytics.jpg" data-title="Creator Roster Scale" data-metric="13.4M views" data-type="image">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">
+                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                Dashboard
+              </span>
+              <img src="images/proof-analytics.jpg" alt="Dashboard showing 13.4M cumulative views across 70 active users" loading="lazy" />
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">13.4M</span>
+              <span class="marquee-card-label">Cumulative Network Views</span>
+              <span class="marquee-card-detail">Multi-creator analytics snapshot</span>
+            </div>
+          </article>
+
+          <!-- DUPLICATE SET FOR INFINITE SEAMLESS LOOP -->
+          <article class="marquee-card" aria-hidden="true">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">Video Clip</span>
+              <video src="videos/clip-1.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">175,202 views</span>
+              <span class="marquee-card-label">Automotive Lifestyle Hook</span>
+              <span class="marquee-card-detail">High-retention kinetic subtitle pacing</span>
+            </div>
+          </article>
+
+          <article class="marquee-card" aria-hidden="true">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">Dashboard</span>
+              <img src="images/case-1.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">175,202</span>
+              <span class="marquee-card-label">Average Video Views</span>
+              <span class="marquee-card-detail">Documented organic growth curve</span>
+            </div>
+          </article>
+
+          <article class="marquee-card" aria-hidden="true">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">Video Clip</span>
+              <video src="videos/clip-2.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">320K+ views</span>
+              <span class="marquee-card-label">Podcast Multi-Camera Hook</span>
+              <span class="marquee-card-detail">Face-tracked vertical multi-panel cut</span>
+            </div>
+          </article>
+
+          <article class="marquee-card" aria-hidden="true">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">Dashboard</span>
+              <img src="images/proof-posts.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">10,863+</span>
+              <span class="marquee-card-label">Total Posts Published</span>
+              <span class="marquee-card-detail">1.84% average engagement rate</span>
+            </div>
+          </article>
+
+          <article class="marquee-card" aria-hidden="true">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">Video Clip</span>
+              <video src="videos/clip-3.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">285K+ views</span>
+              <span class="marquee-card-label">Stream Reaction Hook</span>
+              <span class="marquee-card-detail">High early watch-time hook structure</span>
+            </div>
+          </article>
+
+          <article class="marquee-card" aria-hidden="true">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">Dashboard</span>
+              <img src="images/proof-views.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">4B+</span>
+              <span class="marquee-card-label">Views Across Network</span>
+              <span class="marquee-card-detail">Cumulative distribution across accounts</span>
+            </div>
+          </article>
+
+          <article class="marquee-card" aria-hidden="true">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">Video Clip</span>
+              <video src="videos/clip-4.mp4" muted autoplay loop playsinline preload="metadata"></video>
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">410K+ views</span>
+              <span class="marquee-card-label">Founder Personal Brand</span>
+              <span class="marquee-card-detail">Authority narrative with kinetic typography</span>
+            </div>
+          </article>
+
+          <article class="marquee-card" aria-hidden="true">
+            <div class="marquee-card-image-wrap">
+              <span class="media-badge">Dashboard</span>
+              <img src="images/proof-analytics.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="marquee-card-body">
+              <span class="marquee-card-metric tabular-nums">13.4M</span>
+              <span class="marquee-card-label">Cumulative Network Views</span>
+              <span class="marquee-card-detail">Multi-creator analytics snapshot</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===================================================================
+         4. STATS ROW (Counters animate from 0 when scrolled into view)
+         =================================================================== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <!-- Stat 1: 10,863+ posts -->
+          <div class="stat-box reveal-on-scroll">
+            <div class="stat-value tabular-nums" data-counter-target="10863" data-suffix="+">0</div>
+            <div>
+              <div class="stat-label">Posts Published</div>
+              <div class="stat-detail">1.84% average engagement rate across managed short-form channels.</div>
+            </div>
+          </div>
+
+          <!-- Stat 2: 4B+ views across network -->
+          <div class="stat-box reveal-on-scroll">
+            <div class="stat-value tabular-nums" data-counter-target="4" data-suffix="B+">0</div>
+            <div>
+              <div class="stat-label">Views Across Network</div>
+              <div class="stat-detail">4B+ cumulative views generated across managed creator channels.</div>
+            </div>
+          </div>
+
+          <!-- Stat 3: 175,202 average video views -->
+          <div class="stat-box reveal-on-scroll">
+            <div class="stat-value tabular-nums" data-counter-target="175202" data-suffix="">0</div>
+            <div>
+              <div class="stat-label">Average Video Views</div>
+              <div class="stat-detail">Documented average video reach benchmark across distributed clips.</div>
+            </div>
+          </div>
+
+          <!-- Stat 4: Pending Dashboard Proof (Strictly adheres to user constraint) -->
+          <div class="stat-box stat-box-pending reveal-on-scroll">
+            <div class="stat-value" style="font-size: 1.5rem; color: var(--text-muted);">[Pending Dashboard]</div>
+            <div>
+              <div class="stat-label">5B+ Views / 5K+ Fan Pages</div>
+              <div class="stat-detail">[TODO: add 5B+ views / 5K+ fan pages ONLY if I confirm I have a dashboard that proves it. Until then, leave them out.]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         5. SERVICES (Two Large Asymmetric Cards)
+         =================================================================== -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-head reveal-on-scroll">
+          <span class="section-label">Core Offerings</span>
+          <h2 class="section-title">What You Get</h2>
+          <p class="section-subtitle">We don't sell vanity promises. We build reliable distribution pipelines for clients who already have long-form video assets.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Content Clipping -->
+          <div class="service-card reveal-on-scroll">
+            <div>
+              <span class="service-index">01 / Service</span>
+              <h3 class="service-heading">Short-Form Clipping Pipeline</h3>
+              <p class="service-desc">
+                We ingest your raw YouTube videos, interviews, webinars, and podcast recordings each week. Our editors pinpoint high-retention moments, reframe the video into vertical 9:16 format, add accurate synchronized captions, and deliver finished clips ready for Instagram Reels, TikTok, YouTube Shorts, and X.
+              </p>
+            </div>
+            <ul class="service-deliverables">
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Frame-by-frame 9:16 vertical crop with face tracking</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Word-by-word animated captions and custom typography</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Tested hook variations to maximize 3-second retention</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Personal Branding -->
+          <div class="service-card service-card-secondary reveal-on-scroll">
+            <div>
+              <span class="service-index">02 / Service</span>
+              <h3 class="service-heading">Personal Branding for Creators</h3>
+              <p class="service-desc">
+                We design and manage a focused distribution cadence around your personal profile. We optimize your profile bios, identify thematic content pillars that match your expertise, and ensure your presence stays consistent across all four major short-form networks without taking hours away from your core business.
+              </p>
+            </div>
+            <ul class="service-deliverables">
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Profile bio and positioning optimization</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Weekly multi-channel scheduling & publishing</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Audience sentiment and performance reporting</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         6. WHO WE WORK WITH
+         =================================================================== -->
+    <section class="audience-section">
+      <div class="container">
+        <div class="section-head reveal-on-scroll">
+          <span class="section-label">Partnerships</span>
+          <h2 class="section-title">Who We Work With</h2>
+          <p class="section-subtitle">We partner with teams that already produce meaningful content and need systematic short-form distribution.</p>
+        </div>
+
+        <div class="audience-grid">
+          <!-- Influencers / Creators -->
+          <article class="audience-card reveal-on-scroll">
+            <span class="audience-type">Target Category 01</span>
+            <h3 class="audience-title">Influencers & Creators</h3>
+            <p class="audience-sentence">
+              We turn your existing YouTube videos, live streams, and podcasts into daily short-form momentum so you capture audience on Instagram, TikTok, and Shorts without filming extra footage.
+            </p>
+          </article>
+
+          <!-- Companies -->
+          <article class="audience-card reveal-on-scroll">
+            <span class="audience-type">Target Category 02</span>
+            <h3 class="audience-title">Companies & Brands</h3>
+            <p class="audience-sentence">
+              We repurpose your webinars, executive keynotes, and product demos into customer-facing short clips that generate inbound leads and establish industry authority.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         7. HOW IT WORKS (01 Setup / 02 Manage / 03 Scale)
+         =================================================================== -->
+    <section id="how-it-works" class="process-section">
+      <div class="container">
+        <div class="section-head reveal-on-scroll">
+          <span class="section-label">Execution Framework</span>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">A straightforward three-step workflow designed to minimize demands on your schedule.</p>
+        </div>
+
+        <div class="process-grid">
+          <!-- Step 01: Setup -->
+          <div class="process-step reveal-on-scroll">
+            <span class="process-num">01</span>
+            <h3 class="process-step-title">Setup</h3>
+            <p class="process-step-desc">
+              We audit your existing video library, establish your brand guidelines and subtitle styles, and set up your shared folder and publishing workflow.
+            </p>
+            <span class="process-todo-tag">[TODO: describe my real process in 3 steps]</span>
+          </div>
+
+          <!-- Step 02: Manage -->
+          <div class="process-step reveal-on-scroll">
+            <span class="process-num">02</span>
+            <h3 class="process-step-title">Manage</h3>
+            <p class="process-step-desc">
+              Each week you upload long-form footage; we cut the clips, edit pacing, add subtitles, and queue them for simple approval or direct distribution.
+            </p>
+            <span class="process-todo-tag">[TODO: describe my real process in 3 steps]</span>
+          </div>
+
+          <!-- Step 03: Scale -->
+          <div class="process-step reveal-on-scroll">
+            <span class="process-num">03</span>
+            <h3 class="process-step-title">Scale</h3>
+            <p class="process-step-desc">
+              We monitor retention curves and engagement rates, identify the topics driving the most traction, and increase output volume across platforms.
+            </p>
+            <span class="process-todo-tag">[TODO: describe my real process in 3 steps]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         8. CASE STUDY (Real example with 175,202 views growth curve)
+         Note: Payout amount is permanently masked via CSS badge as ordered.
+         =================================================================== -->
+    <section id="case-study" class="case-study-section">
+      <div class="container">
+        <div class="section-head reveal-on-scroll">
+          <span class="section-label">Case Study</span>
+          <h2 class="section-title">Real Organic Clip Performance</h2>
+          <p class="section-subtitle">A verified view curve demonstrating how proper hook placement and retention pacing trigger distribution.</p>
+        </div>
+
+        <div class="case-study-card reveal-on-scroll">
+          <!-- Screenshot Visual with Payout Overlay Mask -->
+          <div class="case-study-visual">
+            <img src="images/case-1.jpg" alt="Case study screenshot showing clip and graph peaking at 175,202 views" />
+            <!-- Masking patch permanently covering the top right "$70.08" payout number -->
+            <div class="payout-mask-patch" title="Verified Analytics">
+              <span class="pulse-point" aria-hidden="true"></span>
+              <span>Verified Growth Curve</span>
+            </div>
+          </div>
+
+          <!-- Case Details -->
+          <div class="case-study-content">
+            <span class="section-label">Performance Baseline</span>
+            <div class="case-metric-highlight tabular-nums">175,202</div>
+            <div class="case-metric-sublabel">Average Video Views Baseline</div>
+            <p class="case-caption">
+              A benchmark video documenting an average video reach of 175,202 views with a steep retention-driven growth curve. High viewer watch time enabled algorithmic distribution across target audience segments with zero paid advertising.
+            </p>
+            <div class="case-growth-details">
+              <div><strong>Method:</strong> Long-form interview hook extraction & 9:16 vertical reframe</div>
+              <div><strong>Spend:</strong> $0 paid promotion — 100% organic algorithmic reach</div>
+              <div><strong>Status:</strong> Documented in client dashboard analytics</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Companion Verified Dashboard Proof Cards -->
+        <div class="case-study-proof-header reveal-on-scroll" style="margin-top: 3.5rem; margin-bottom: 1.5rem;">
+          <span class="section-label">Supporting Evidence</span>
+          <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-top: 0.25rem;">
+            Verified Multi-Channel Dashboard Proof
+          </h3>
+          <p style="font-size: 0.95rem; color: var(--text-secondary);">Direct screenshots from analytics consoles proving output volume, engagement rates, and distribution scale.</p>
+        </div>
+
+        <div class="case-study-proof-grid reveal-on-scroll">
+          <!-- Proof Card 1: 10,863 Posts & Engagement Rate -->
+          <article class="case-proof-card" data-src="images/proof-posts.jpg" data-title="10,863 Posts Analytics Console" data-metric="10,863 Posts · 1.84% Avg ER">
+            <div class="case-proof-visual">
+              <span class="media-badge">
+                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                Console Proof
+              </span>
+              <img src="images/proof-posts.jpg" alt="Analytics showing 10,863 total posts and 1.84% avg engagement rate" loading="lazy" />
+            </div>
+            <div class="case-proof-body">
+              <div class="case-proof-metric tabular-nums">10,863+ Posts</div>
+              <div class="case-proof-title">Total Published Volume</div>
+              <div class="case-proof-detail">1.84% average engagement rate across all short-form formats.</div>
+            </div>
+          </article>
+
+          <!-- Proof Card 2: 4B+ Network Scale -->
+          <article class="case-proof-card" data-src="images/proof-views.jpg" data-title="Multi-Platform Network Scale" data-metric="4B+ Total Views">
+            <div class="case-proof-visual">
+              <span class="media-badge">
+                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                Views Dashboard
+              </span>
+              <img src="images/proof-views.jpg" alt="Dashboard showing verified view figures across client network" loading="lazy" />
+            </div>
+            <div class="case-proof-body">
+              <div class="case-proof-metric tabular-nums">4B+ Views</div>
+              <div class="case-proof-title">Network Distribution Scale</div>
+              <div class="case-proof-detail">Cumulative distribution across managed client networks.</div>
+            </div>
+          </article>
+
+          <!-- Proof Card 3: 13.4M Reach across 70 Active Users -->
+          <article class="case-proof-card" data-src="images/proof-analytics.jpg" data-title="Creator Roster Scale Analytics" data-metric="13.4M Views Across 70 Creators">
+            <div class="case-proof-visual">
+              <span class="media-badge">
+                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                Roster Analytics
+              </span>
+              <img src="images/proof-analytics.jpg" alt="Dashboard showing 13.4M cumulative views across 70 active creators" loading="lazy" />
+            </div>
+            <div class="case-proof-body">
+              <div class="case-proof-metric tabular-nums">13.4M Views</div>
+              <div class="case-proof-title">Active Creator Roster</div>
+              <div class="case-proof-detail">Performance across 70 active influencer & founder channels.</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         9. FAQ ACCORDION (Honest answers with [TODO] markers)
+         =================================================================== -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-head reveal-on-scroll">
+          <span class="section-label">Frequently Asked Questions</span>
+          <h2 class="section-title">Direct Answers</h2>
+          <p class="section-subtitle">No marketing spin. Here is how our distribution service operates in practice.</p>
+        </div>
+
+        <div class="faq-accordion-list reveal-on-scroll">
+          <!-- Question 1 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>How long until I see results?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                Distribution results typically emerge between 2 to 4 weeks of consistent posting as the algorithms test your clips across different viewer cohorts. Some clips gain traction earlier, but sustainable viewership builds with compounding volume.
+                <span class="todo-pill">[TODO: my answer - customize with your historical timeframe]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What platforms do you work on?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                We format and distribute clips for Instagram Reels, TikTok, YouTube Shorts, and X.
+                <span class="todo-pill">[TODO: my answer - confirm exact platform list for your packages]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Do I need to give you my accounts?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                No, you never have to hand over direct passwords. You can grant scheduling access through third-party management tools (e.g. Buffer, Metricool, Later), add our team as a contributor, or simply receive edited video files and captions in a shared Google Drive or Dropbox to publish yourself.
+                <span class="todo-pill">[TODO: my answer - state your preferred access setup]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Can posting at scale get an account banned or limited?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                No, because we do not use bot automation or automated spam tactics. Every clip is uniquely cut from your authentic material, subtitles and pacing are individually tailored, and scheduling strictly adheres to each platform's community guidelines and natural posting rates.
+                <span class="todo-pill">[TODO: my answer - outline your specific safety protocols]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>How do you make the content?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-answer">
+                We work directly with your existing long-form recordings. You provide the raw links or files, and our video editors identify the strongest hooks, eliminate dead pauses, reframe the video to 9:16 vertical, design paced subtitles, and write platform-specific captions.
+                <span class="todo-pill">[TODO: my answer - describe tools and editing workflow]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         10. CLOSING SECTION
+         =================================================================== -->
+    <section class="closing-section">
+      <div class="container">
+        <h2 class="closing-headline reveal-on-scroll">
+          Ready to Turn Your Content Into Real Distribution?
+        </h2>
+        <p class="section-subtitle reveal-on-scroll" style="margin: 0 auto; max-width: 600px;">
+          Let's review your long-form video archives and map out a weekly clipping pipeline tailored to your audience.
+        </p>
+
+        <div class="closing-actions reveal-on-scroll">
+          <a href="https://calendly.com/fidelitymedia" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.85rem 2rem; font-size: 1rem;">
+            Book a Free Call
+          </a>
+          <span class="call-duration-note">
+            30-minute discovery strategy call via Calendly · No obligations
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       11. FOOTER (Name, Copyright, Social Links)
+       =================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="images/logo.jpg" alt="Fidelity Media Logo" class="brand-logo-img" />
+          <span>Fidelity Media</span>
+        </div>
+
+        <div class="footer-copy">
+          &copy; 2026 Fidelity Media. All rights reserved.
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="https://instagram.com/rizzscaledd" target="_blank" rel="noopener noreferrer">Instagram (@rizzscaledd)</a></li>
+          <li><a href="mailto:fidelitymediaa@gmail.com">fidelitymediaa@gmail.com</a></li>
+          <li><a href="https://calendly.com/fidelitymedia" target="_blank" rel="noopener noreferrer">Calendly</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">TikTok [TODO]</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube Shorts [TODO]</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">X [TODO]</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       12. INTERACTIVE BOOKING MODAL
+       =================================================================== -->
+  <div id="booking-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <h3 id="modal-title" class="modal-title">Book a Strategy Call</h3>
+          <p class="modal-desc">Select how you would like to connect with Fidelity Media.</p>
+        </div>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close booking modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Direct Quick Connect Buttons -->
+        <div class="booking-methods">
+          <a id="modal-calendly-btn" href="https://calendly.com/fidelitymedia" target="_blank" rel="noopener noreferrer" class="booking-card-action">
+            <span class="booking-card-badge">Instant Booking</span>
+            <div class="booking-card-title">
+              <span>Calendly</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+            <span class="booking-card-sub">Pick a 30-min strategy call</span>
+          </a>
+
+          <a href="https://instagram.com/rizzscaledd" target="_blank" rel="noopener noreferrer" class="booking-card-action">
+            <span class="booking-card-badge">Direct DM</span>
+            <div class="booking-card-title">
+              <span>@rizzscaledd</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+            <span class="booking-card-sub">DM on Instagram</span>
+          </a>
+        </div>
+
+        <div class="modal-form-divider">Or send a direct inquiry</div>
+
+        <!-- Submission Success Feedback -->
+        <div id="modal-success-banner" class="form-success-banner" role="alert">
+          Thank you! Your inquiry has been received. We will respond within 24 hours.
+        </div>
+
+        <!-- Quick Form -->
+        <form id="modal-inquiry-form" class="inquiry-form">
+          <div class="form-group">
+            <label for="form-name" class="form-label">Your Name</label>
+            <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Miller" required />
+          </div>
+
+          <div class="form-group">
+            <label for="form-email" class="form-label">Email or Social Handle</label>
+            <input type="text" id="form-email" class="form-input" placeholder="e.g. alex@example.com or @alex" required />
+          </div>
+
+          <div class="form-group">
+            <label for="form-message" class="form-label">Current Long-Form Content Link (Podcast, YouTube, etc.)</label>
+            <textarea id="form-message" class="form-textarea" placeholder="Share a link to your current podcast or YouTube channel..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+            Submit Inquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       13. MEDIA LIGHTBOX / PLAYER MODAL
+       =================================================================== -->
+  <div id="media-lightbox" class="lightbox-overlay" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+    <div class="lightbox-content-box">
+      <button id="lightbox-close-btn" class="lightbox-close" aria-label="Close media preview">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div id="lightbox-media-container" class="lightbox-media-container">
+        <!-- Injected dynamically via JS: <video controls autoplay> or <img> -->
+      </div>
+
+      <div class="lightbox-info">
+        <div>
+          <h4 id="lightbox-title" style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">Media Preview</h4>
+          <span id="lightbox-metric" class="tabular-nums" style="font-size: 0.95rem; font-weight: 600; color: var(--text-secondary);">Verified Performance</span>
+        </div>
+        <button class="btn btn-primary" data-action="book-call" style="padding: 0.5rem 1rem; font-size: 0.8rem;">
+          Get Similar Results
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vanilla Script Link -->
+  <script src="./script.js"></script>
+</body>
+</html>
